@@ -5,6 +5,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
@@ -16,8 +17,8 @@ public class BlockDirectional extends BlockBase {
 
     public static final PropertyDirection FACING = BlockHorizontal.FACING;
 
-    public BlockDirectional(String name, Material material) {
-        super(name, material);
+    public BlockDirectional(String name, Material material, CreativeTabs tab) {
+        super(name, material, tab);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
     }
 

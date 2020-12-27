@@ -1,0 +1,8 @@
+{
+  "ingredients": {
+    "any": "kaktusz.tradewithcarts.recipes.IngredientAny$Factory"
+  },
+  "recipes" : {
+    "exchange_deal_assign": "kaktusz.tradewithcarts.recipes.ExchangeDealAssignRecipe$Factory"
+  }
+}

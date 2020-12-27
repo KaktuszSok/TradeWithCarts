@@ -5,6 +5,7 @@ import kaktusz.tradewithcarts.tileentities.ExchangeStationTileEntity;
 import kaktusz.tradewithcarts.util.Reference;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.ResourceLocation;
@@ -19,7 +20,7 @@ import javax.annotation.Nullable;
 public class BlockExchangeStation extends BlockDirectional {
 
     public BlockExchangeStation(String name, Material material) {
-        super(name, material);
+        super(name, material, CreativeTabs.TRANSPORTATION);
     }
 
     public void RegisterTileEntity() {

@@ -1,0 +1,22 @@
+{
+  "type": "tradewithcarts:exchange_deal_assign",
+
+  "ingredients":
+  [
+
+    {
+      "item": "tradewithcarts:exchange_deal"
+    },
+    {
+      "type": "tradewithcarts:any"
+    },
+    {
+      "type": "tradewithcarts:any"
+    }
+  ],
+  "result":
+  {
+    "item": "tradewithcarts:exchange_deal",
+    "count": 1
+  }
+}

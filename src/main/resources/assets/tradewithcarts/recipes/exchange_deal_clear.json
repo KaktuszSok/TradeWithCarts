@@ -2,14 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "minecraft:paper"
-    },
-    {
-      "item": "minecraft:dye",
-      "data": 0
-    },
-    {
-      "item": "minecraft:feather"
+      "item": "tradewithcarts:exchange_deal"
     }
   ],
   "result": {
