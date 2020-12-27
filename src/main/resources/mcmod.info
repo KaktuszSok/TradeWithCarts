@@ -1,0 +1,16 @@
+[
+{
+  "modid": "tradewithcarts",
+  "name": "Trade with Carts",
+  "description": "Simple railroad trading solution.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Kaktusz"],
+  "credits": "Kaktusz (aka eeveelution) - Lead Dev.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

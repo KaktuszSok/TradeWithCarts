@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "tradewithcarts:exchange_station" },
+    "facing=south": { "model": "tradewithcarts:exchange_station", "y": 180 },
+    "facing=west":  { "model": "tradewithcarts:exchange_station", "y": 270 },
+    "facing=east":  { "model": "tradewithcarts:exchange_station", "y": 90 }
+  }
+}
