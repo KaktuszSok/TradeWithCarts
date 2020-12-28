@@ -63,9 +63,11 @@ public class ItemExchangeDeal extends ItemBase {
     }
     private static void setStackForNBT(ItemStack deal, ItemStack stack, String key) {
         if(!(deal.getItem() instanceof ItemExchangeDeal)) return;
+        if(stack == null) return;
 
         NBTTagCompound nbt = deal.getTagCompound();
         if(nbt == null) nbt = new NBTTagCompound();
+
 
         NBTTagCompound stackNBT = stack.serializeNBT();
         nbt.setTag(key, stackNBT);
