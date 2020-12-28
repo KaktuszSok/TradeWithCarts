@@ -225,10 +225,12 @@ public class ExchangeStationTileEntity extends TileEntity implements ITickable {
                 ItemStack slotStack = inv.getStackInSlot(i);
                 if(!inv.isItemValidForSlot(i, stack)) continue;
                 if(slotStack.isEmpty()) {
-                    inv.setInventorySlotContents(i, stack.copy());
+                    ItemStack newStack = stack.copy();
+                    newStack.setCount(countLeft);
+                    inv.setInventorySlotContents(i, newStack);
                     return;
                 }
-                int amtToAdd = Math.min(stack.getCount(), getCombineDelta(stack, slotStack));
+                int amtToAdd = Math.min(countLeft, getCombineDelta(stack, slotStack));
                 if (amtToAdd > 0)
                 {
                     slotStack.setCount(slotStack.getCount() + amtToAdd);
@@ -245,10 +247,12 @@ public class ExchangeStationTileEntity extends TileEntity implements ITickable {
             ItemStack slotStack = inv.getStackInSlot(i);
             if(!inv.isItemValidForSlot(i, stack)) continue;
             if(slotStack.isEmpty()) {
-                inv.setInventorySlotContents(i, stack.copy());
+                ItemStack newStack = stack.copy();
+                newStack.setCount(countLeft);
+                inv.setInventorySlotContents(i, newStack);
                 return;
             }
-            int amtToAdd = Math.min(stack.getCount(), getCombineDelta(stack, slotStack));
+            int amtToAdd = Math.min(countLeft, getCombineDelta(stack, slotStack));
             if (amtToAdd > 0)
             {
                 slotStack.setCount(slotStack.getCount() + amtToAdd);
