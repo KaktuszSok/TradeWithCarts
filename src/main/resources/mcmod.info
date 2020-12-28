@@ -3,7 +3,7 @@
   "modid": "tradewithcarts",
   "name": "Trade with Carts",
   "description": "Simple railroad trading solution.",
-  "version": "${version}",
+  "version": "1.0.1",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",

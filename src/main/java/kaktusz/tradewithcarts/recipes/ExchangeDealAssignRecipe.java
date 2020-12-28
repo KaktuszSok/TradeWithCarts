@@ -17,8 +17,6 @@ import net.minecraftforge.common.crafting.IRecipeFactory;
 import net.minecraftforge.common.crafting.JsonContext;
 import net.minecraftforge.oredict.ShapelessOreRecipe;
 
-import javax.annotation.Nonnull;
-
 public class ExchangeDealAssignRecipe extends ShapelessOreRecipe implements IRecipe {
 
     public ExchangeDealAssignRecipe(ResourceLocation group, NonNullList<Ingredient> input, ItemStack result) {
